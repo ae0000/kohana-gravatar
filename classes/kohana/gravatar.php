@@ -49,7 +49,7 @@ class Kohana_Gravatar {
 			self::$_instances[$email][$config_checksum] = new Gravatar($email, $config);
 		}
 
-		// Return a the instance
+		// Return the instance
 		return self::$_instances[$email][$config_checksum];
 	}
 
