@@ -56,7 +56,7 @@ class Kohana_Gravatar_Xmlrpc {
 		}
 
 		// Configure this library
-		$config += Kohana::config('gravatar.xmlrpc');
+		$config += Kohana::$config->load('gravatar.xmlrpc');
 		$this->_config = $config;
 	}
 
